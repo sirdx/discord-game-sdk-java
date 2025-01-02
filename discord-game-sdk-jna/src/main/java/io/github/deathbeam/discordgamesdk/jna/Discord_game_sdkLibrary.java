@@ -186,6 +186,8 @@ public interface Discord_game_sdkLibrary extends Library {
 	public static final int DISCORD_STORE_MANAGER_VERSION = (int)1;
 	public static final int DISCORD_VOICE_MANAGER_VERSION = (int)1;
 	public static final int DISCORD_ACHIEVEMENT_MANAGER_VERSION = (int)1;
+	/** Original signature : <code>void DiscordCreateParamsSetDefault(DiscordCreateParams*)</code> */
+	void DiscordCreateParamsSetDefault(DiscordCreateParams params);
 	/**
 	 * Original signature : <code>EDiscordResult DiscordCreate(DiscordVersion, DiscordCreateParams*, IDiscordCore**)</code><br>
 	 * @deprecated use the safer method {@link #DiscordCreate(int, io.github.deathbeam.discordgamesdk.jna.DiscordCreateParams, io.github.deathbeam.discordgamesdk.jna.IDiscordCore.ByReference[])} instead
